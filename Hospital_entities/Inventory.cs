@@ -13,8 +13,8 @@ namespace Hospital_entities
         public int Id { get; set; }
 
         [Required(ErrorMessage = "MedicineId is required")]
-        public int MedicineId { get; set; } // Foreign key
-        public Medicine Medicine { get; set; } // Navigation property
+        public int MedicineId { get; set; }
+        public Medicine Medicine { get; set; }
 
         [Required(ErrorMessage = "Quantity is required")]
         public int Quantity { get; set; }
@@ -23,6 +23,5 @@ namespace Hospital_entities
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ExpiryDate { get; set; }
 
-        // Other properties as needed
     }
 }

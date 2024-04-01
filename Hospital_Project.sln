@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_models", "Hospital
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_services", "Hospital_services\Hospital_services.csproj", "{69FA7869-1BC5-4C90-AEFE-CEB514D7C7DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital_api", "Hospital_api\Hospital_api.csproj", "{79238EAA-DC1D-4B2C-B66E-6EAC2795C085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_api", "Hospital_api\Hospital_api.csproj", "{79238EAA-DC1D-4B2C-B66E-6EAC2795C085}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-namespace Hospital_api
+namespace WebApplication1
 {
     public class WeatherForecast
     {
