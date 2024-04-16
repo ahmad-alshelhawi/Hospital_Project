@@ -13,6 +13,7 @@ namespace Hospital.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public decimal Price { get; set; }
         public bool IsDeleted { get; set; } = false;
         public int CategoryId { get; set; }
         public int ManufacturerId { get; set; }
@@ -23,6 +24,8 @@ namespace Hospital.Models
         public string Description { get; set; }
         public bool IsDeleted { get; set; }
         public int CategoryId { get; set; }
+        public decimal Price { get; set; }
+
         public int ManufacturerId { get; set; }
 
     }
@@ -31,6 +34,8 @@ namespace Hospital.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public bool IsDeleted { get; set; }
+        public decimal Price { get; set; }
+
         public int CategoryId { get; set; }
         public int ManufacturerId { get; set; }
     }

@@ -14,7 +14,7 @@ namespace Hospital_entities
 
         [Required(ErrorMessage = "Username is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Username must be between 3 and 50 characters")]
-        public string Username { get; set; }
+        public string UserName { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
         [StringLength(100, MinimumLength = 6, ErrorMessage = "Password must be between 6 and 100 characters")]
@@ -25,9 +25,9 @@ namespace Hospital_entities
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public bool IsAdmin { get; set; } = false;
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public List<UserPermission> UserPermissions { get; set; } = new List<UserPermission>();
         public List<Billing> Billing { get; set; } = new List<Billing>();
         public List<ActionLog> ActionLogs { get; set; } = new List<ActionLog>();
